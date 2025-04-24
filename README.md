@@ -48,15 +48,8 @@ Before setting up the pipeline, ensure the following:
 
 ## Setup Instructions
 
-### 1. Jenkins Installation and Configuration
-1. **Install Jenkins**:
+### 1. Docker installation
+1. **Install**:
    ```bash
-   sudo apt update
-   sudo apt install openjdk-17-jdk -y
-   wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
-   sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
-   sudo apt update
-   sudo apt install jenkins -y
-   sudo systemctl start jenkins
-   sudo systemctl enable jenkins
+     curl https://get.docker.com/ > dockerinstall && chmod 777 dockerinstall && ./dockerinstall
    ```
